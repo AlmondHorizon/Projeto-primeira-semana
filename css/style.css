@@ -1,11 +1,20 @@
 body {
   margin: 0;
-  font-family: 'Alegreya', serif;
+  font-family: 'Arial', sans-serif;
+}
+
+#logo_02 {
+  height: auto;
+  width: auto;
+  max-width: 500px;
+  max-height: 20px;
 }
 .container {
   width: 100%;
-  height: 50px;
+  height: 40px;
   display: flex;
+  padding-left: 100px;
+  padding-right:  100px;
   justify-content: space-around;
   align-items: center;
   background-color: #2E4172;
@@ -28,6 +37,7 @@ body {
   box-sizing: border-box;
 }
 .left {
+  margin-top: 10PX;
   margin-right: auto;
 }
 .container p {
@@ -66,33 +76,35 @@ body {
 }
 #center-image {
   position: relative;
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  max-height: 1024px;
-  opacity: 0.3;
+  height: 500px;
+  width: 100%;
+  opacity: 0.5;
+  filter:brightness(90%);
 }
 .center-image-text {
   position: absolute;
   text-align: center;
   vertical-align: middle;
-
+  color: #2E4172;
   font-size: 200%;
-  top: 40%;
+  top: 50%;
   width: 350px;
   left: 25%;
   transform: translate(-50%, -50%);
+  font-weight: bold;
+
 }
 .center-image-video {
   position: absolute;
     top: 50%;
-    left: 70%;
+    left: 55%;
     width: 200px;
     transform: translate(-50%, -50%);
 }
 .background-img {
   width: 100%;
   opacity: 0.2;
+  max-height: 450PX;
 }
 .card {
   display: inline-block;
@@ -104,6 +116,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 36px;
+  text-align: justify;
+  color: #2E4172;
 }
 #social-media {
   height: auto;
@@ -113,4 +127,6 @@ body {
 }
 a {
   color: white;
+  text-decoration:none;
+  font-weight: bold;
 }
